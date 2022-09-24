@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Form Project</title>
+</head>
+
+<body>
+    <div class="container">
+        <form method="post" action="#">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col">
+                        <label for="fname">First Name</label>
+                        <input type="text" class="form-control" id="fname">
+                    </div>
+                    <div class="col">
+                        <label for="lname">last Name</label>
+                        <input type="text" class="form-control" id="lname">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" class="form-control" id="address">
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="form group col-md-6">
+                        <label for="city">City</label>
+                        <input type="text" class="form-control" id="city">
+                    </div>
+                    <div class="form group col-md-4">
+                        <label for="state">State</label>
+                        <select class="form-control" id="state">
+                            <option value="ohio">Ohio</option>
+                            <option value="indiana">Indiana</option>
+                            <option value="michigan" selected="selected">Michigan</option>
+                            <option value="illinois">Illinois</option>
+                            <option value="wisconsin">Wisconsin</option>
+                        </select>
+                    </div>
+                    <div class="form group col-md-2">
+                        <label for="zip">Zip</label>
+                        <input type="text" class="form-control" id="zip">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender-identity" id="male" value="option1">
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender-identity" id="female" value="option2">
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender-identity" id="non-binary" value="option2">
+                    <label class="form-check-label" for="non-binary">Non-Binary</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+    </div>
+</body>
+
+</html>
