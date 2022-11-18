@@ -1,12 +1,13 @@
 <?php
-class DatabaseConn 
-{	
+
+class DatabaseConn {	
+
   private $conn;
   /* THIS CLASS CONNECTS TO THE DATABASE ONLY AND SETS UP THE ATTRIBUTE PARAMETERS */
-  public function dbOpen()
-  {
-    try 
-    {
+  public function dbOpen(){
+
+    try {
+
       $dbHost = 'localhost';
       $dbName = 'ajesper';//this will be your WCC username
       $dbUsr = 'ajesper';//this will be your WCC username
@@ -21,13 +22,14 @@ class DatabaseConn
       $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);/* ERROR REPORTING AND THROWING OF ERRORS*/
 
       return $this->conn;
+
     }
       
-    catch(PDOException $e) 
-    { 
+    catch(PDOException $e) { 
+
       echo $e->getMessage(); 
+
     }
 
   }
 }
-?>
