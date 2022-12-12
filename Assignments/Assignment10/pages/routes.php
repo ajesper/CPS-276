@@ -3,6 +3,7 @@
 $path = "index.php?page=login";
 
 session_start();
+$_SESSION['access'];
 if($_SESSION['access'] == "accessGranted")
 {
     $stat = '';
@@ -75,10 +76,14 @@ if(isset($_GET))
     else 
     {
         header('location: '.$path);
+        $_SESSION['access'] = "no";
+	    $_SESSION['status'] = "no";
     }
 }
 else 
 {
     header('location: '.$path);
+    $_SESSION['access'] = "no";
+	$_SESSION['status'] = "no";
 }
 ?>
